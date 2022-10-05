@@ -12,13 +12,12 @@
 # 8.988
 
 from decimal import Decimal
-num = (input("Enter a real number: "))
-accuracy = (input("Enter the required accuracy '0.001': "))
+num1 = (input("Enter a real number: "))
+accuracy1 = (input("Enter the required accuracy '0.001': "))
 
 def round_number (num, accuracy):
-    number = Decimal(num)
-    res = number.quantize(Decimal(accuracy))
+    num = Decimal(num)
+    res = num.quantize(Decimal(accuracy))
     print(res)
     return res
-
-print(round_number(num, accuracy))
+print(round_number(num1, accuracy1))
