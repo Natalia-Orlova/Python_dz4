@@ -28,9 +28,9 @@ def polynomial(k):
     else:
         with open("dz4.txt", "a", encoding="utf-8") as dz4:
             y = ""
+            sign = ['+', '-']
             while k > 0:
                 idx = randint(0,4)
-                sign = ['+', '-']
                 s = choice(sign)
                 if idx == 0:
                     k -= 1
